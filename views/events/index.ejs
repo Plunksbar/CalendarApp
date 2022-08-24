@@ -1,0 +1,10 @@
+<h2>Tus eventos</h2>
+<form action="/events" method="GET">
+    <label>Nombre</label>
+    <input type="text" name="name" value="<%= searchOptions.name %>">
+    <button type="submit">Search</button>
+</form>
+<br>
+<% events.forEach(event => { %>
+    <div><%= event.name %></div>
+<% }) %> 
